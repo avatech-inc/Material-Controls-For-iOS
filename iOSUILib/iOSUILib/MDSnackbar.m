@@ -361,7 +361,7 @@ MDSnackbarManger *snackbarManagerInstance;
 }
 
 - (void)dismiss {
-  if (!_isShowing || isAnimating)
+  if (!_isShowing)
     return;
   isAnimating = true;
   [NSObject cancelPreviousPerformRequestsWithTarget:self
